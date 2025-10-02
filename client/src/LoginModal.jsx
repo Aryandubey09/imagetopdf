@@ -17,7 +17,7 @@ const LoginModal = ({ closeModal }) => {
     setError("");
 
     try {
-      const res = await axios.post("https://imagetopdf-372x.onrender.com/api/auth/login", {
+      const res = await axios.post("https://imagetopdf-1.onrender.com/api/auth/login", {
         email,
         password,
       });

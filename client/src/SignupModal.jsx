@@ -16,7 +16,7 @@ const SignupModal = ({ backToLogin, closeModal }) => {
 
     try {
     const res = await axios.post(
-  "https://imagetopdf-372x.onrender.com/api/auth/signup",
+  "https://imagetopdf-1.onrender.com/api/auth/signup",
   { email, phone, password },
   {
     headers: { "Content-Type": "application/json" },
@@ -24,9 +24,7 @@ const SignupModal = ({ backToLogin, closeModal }) => {
 );
 
 
-      // ✅ Signup successful, auto login (optional) or just close modal
-      // Agar backend return token bhi kare to save:
-      // localStorage.setItem("authToken", res.data.token);
+    
 
       alert("Signup successful! Please login."); 
       backToLogin(); // switch to login modal
