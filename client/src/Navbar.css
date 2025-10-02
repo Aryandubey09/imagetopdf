@@ -1,0 +1,77 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #1e40af;
+  color: white;
+  font-family: sans-serif;
+}
+
+.navbar-logo,
+.navbar-links {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar-action .login-btn {
+  background-color: white;
+  color: #1e40af;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.navbar-action .login-btn:hover {
+  background-color: #f3f4f6;
+}
+
+.user-circle {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: #1e40af;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.user-circle:hover {
+  background-color: #e0e7ff;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 100;
+  overflow: hidden;
+}
+
+.dropdown-menu button {
+  width: 100%;
+  padding: 8px 16px;
+  border: none;
+  background: white;
+  color: #1e40af;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f3f4f6;
+}
