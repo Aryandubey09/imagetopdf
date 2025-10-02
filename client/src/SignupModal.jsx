@@ -16,7 +16,7 @@ const SignupModal = ({ backToLogin, closeModal }) => {
 
     try {
     const res = await axios.post(
-  "https://imagetopdf-1.onrender.com/api/auth/signup",
+      "https://imagetopdf-1.onrender.com/api/auth/signup",
   { email, phone, password },
   {
     headers: { "Content-Type": "application/json" },

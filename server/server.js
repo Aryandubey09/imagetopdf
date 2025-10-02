@@ -11,9 +11,12 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: "https://imagetopdf-1.onrender.com", // your frontend URL
-  credentials: true, // if you need cookies/auth headers
+  origin: true, // allows all origins
+  credentials: true
 }));
+
+
+
 
 
 app.use(express.json());
