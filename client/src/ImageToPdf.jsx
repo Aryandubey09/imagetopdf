@@ -34,7 +34,7 @@ const ImageToPdf = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/upload/image-to-pdf",
+        "https://imagetopdf-my47.onrender.com/api/upload/image-to-pdf",
         formData,
         {
           headers: {
