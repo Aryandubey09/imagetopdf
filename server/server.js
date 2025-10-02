@@ -3,19 +3,25 @@ const cors = require("cors");
 const path = require("path");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const uploadRoutes = require("./Routes/uploadRoutes");
 const authRoutes = require("./Routes/authRoutes");
 
 dotenv.config();
 
 const app = express();
 
-// ✅ CORS for frontend localhost
-app.use(cors({ origin: "*", credentials: true }));
+app.use(cors({
+  origin: "https://imagetopdf-372x.onrender.com",
+  credentials: true
+}));
+
 
 app.use(express.json());
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+app.use("/api/upload", uploadRoutes);
 app.use("/api/auth", authRoutes);
 
-// ✅ MongoDB connection
+// Connect MongoDB
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
@@ -23,6 +29,5 @@ mongoose.connect(process.env.MONGO_URI, {
 .then(() => console.log("MongoDB connected"))
 .catch(err => console.log("MongoDB connection error:", err));
 
-app.listen(process.env.PORT || 5000, () => {
-  console.log(`Server running on port ${process.env.PORT}`);
-});
+
+app.listen(process.env.PORT || 5000, () => console.log(`Server running on port ${process.env.PORT}`));
