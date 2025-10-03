@@ -1,7 +1,7 @@
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(107, 76, 76, 0.77);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
 }
 
 .modal-box {
-  background-color: #ffffff;
+  background-color: #595040;
   border-radius: 12px;
   padding: 50px; /* ✅ small 50px padding */
   width: 350px;
@@ -24,7 +24,7 @@
 .modal-box h2 {
   font-size: 1.5rem;
   margin-bottom: 1.2rem;
-  color: #333;
+  color: #010101;
 }
 
 .modal-box input {
@@ -32,7 +32,7 @@
   padding: 0.5rem;
   margin-bottom: 1rem;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 1px solid #351111;
   font-size: 1rem;
 }
 
@@ -42,6 +42,7 @@
   border-radius: 6px;
   border: none;
   font-weight: bold;
+  background-color: #3b82f6;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -57,11 +58,11 @@
   right: 12px;
   font-size: 1.2rem;
   cursor: pointer;
-  color: #666;
+  color: #e99312;
 }
 
 .switch-link {
-  color: #3b82f6;
+  color: #0dc566;
   cursor: pointer;
   font-weight: 500;
   margin-top: 0.8rem;
