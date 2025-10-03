@@ -1,0 +1,52 @@
+.footer-container {
+  background-color: #121212; /* dark background */
+  color: #f8f9fa; /* light text */
+  font-size: 0.9rem;
+}
+
+.footer-container a.footer-link {
+  color: #f8f9fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-container a.footer-link:hover {
+  color: #0d6efd; /* primary hover */
+}
+
+.footer-container .footer-icon {
+  color: #f8f9fa;
+  transition: color 0.3s ease;
+}
+
+.footer-container .footer-icon:hover {
+  color: #0d6efd;
+}
+
+.footer-container .border-bottom,
+.footer-container .border-top {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Reduce spacing */
+.footer-container .p-4, .footer-container .py-4, .footer-container .py-2 {
+  padding: 0.5rem 1rem !important;
+}
+
+.footer-container form .form-control,
+.footer-container form textarea {
+  background-color: #1e1e1e !important;
+  color: #f8f9fa !important;
+  border: 1px solid #555 !important;
+}
+
+.footer-container form .form-control:focus,
+.footer-container form textarea:focus {
+  border-color: #0d6efd !important;
+  box-shadow: none !important;
+}
+
+.footer-container form .btn-primary {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.8rem;
+}
